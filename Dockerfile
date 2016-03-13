@@ -1,5 +1,5 @@
 FROM istepanov/dokuwiki
-MAINTAINER Brendan Halliday <nog3@nog3.net>
+MAINTAINER Brendan 'nog3' Halliday <nog3@nog3.net>
 
 # This is a customized docker install of dokuwiki which adds the openauth plugin.
 
