@@ -1,4 +1,4 @@
 # HSBNE-dokuwiki
-HSBNE Customized Dokuwiki Install with OpenAuth Plugin installed.
+HSBNE customized Dokuwiki Install with OpenAuth Plugin installed.
 
 Hosted as wiki.hsbne.org
