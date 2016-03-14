@@ -9,6 +9,6 @@ RUN apt-get update && \
 
 # add oauth plugin
 RUN curl -O -L "https://github.com/cosmocode/dokuwiki-plugin-oauth/archive/master.zip" 
-RUN unzip master.zip -d /dokuwiki/lib/plugins/
+RUN unzip master.zip /dokuwiki/lib/plugins/
 RUN mv /dokuwiki/lib/plugins/dokuwiki-plugin-oauth-master/ /dokuwiki/lib/plugins/oauth/
 RUN rm -rf master.zip
