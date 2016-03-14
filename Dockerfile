@@ -8,7 +8,7 @@ RUN apt-get update && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # add todo plugin
-RUN curl -O -L "https://github.com/cosmocode/dokuwiki-plugin-oauth/zipball/master" 
-RUN unzip cosmocode-dokuwiki*.zip -d /var/www/lib/plugins/
-RUN mv /var/www/lib/plugins/cosmocode-dokuwiki-plugin-oauth* /var/www/lib/plugins/oauth
-RUN rm -rf cosmocode-dokuwiki*.zip
+RUN curl -O -L "https://github.com/cosmocode/dokuwiki-plugin-oauth/archive/master.zip" 
+RUN unzip master.zip -d /var/www/lib/plugins/
+RUN mv /var/www/lib/plugins/master /var/www/lib/plugins/oauth
+RUN rm -rf master.zip
