@@ -8,7 +8,8 @@ RUN apt-get update && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # add oauth plugin
-RUN curl -O -L "https://github.com/cosmocode/dokuwiki-plugin-oauth/archive/master.zip" 
-RUN unzip master.zip /dokuwiki/lib/plugins/
-RUN mv /dokuwiki/lib/plugins/dokuwiki-plugin-oauth-master/ /dokuwiki/lib/plugins/oauth/
+RUN curl -O -L "https://github.com/cosmocode/dokuwiki-plugin-oauth/archive/master.zip"
+RUN mkdir /dokuwiki/temp
+RUN unzip master.zip -d /dokuwiki/temp/
+RUN mv /dokuwiki/temp/dokuwiki-plugin-oauth-master/ /dokuwiki/lib/plugins/oauth/
 RUN rm -rf master.zip
