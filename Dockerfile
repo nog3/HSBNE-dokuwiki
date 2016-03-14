@@ -11,5 +11,5 @@ RUN apt-get update && \
 RUN curl -O -L "https://github.com/cosmocode/dokuwiki-plugin-oauth/archive/master.zip"
 RUN mkdir /dokuwiki/temp
 RUN unzip master.zip -d /dokuwiki/temp/
-RUN mv /dokuwiki/temp/dokuwiki-plugin-oauth-master/ /dokuwiki/lib/plugins/oauth/
+RUN mv /dokuwiki/temp/dokuwiki-plugin-oauth-master/ /dokuwiki/lib/plugins/oauth
 RUN rm -rf master.zip
