@@ -4,7 +4,7 @@ MAINTAINER Brendan 'nog3' Halliday <nog3@nog3.net>
 # This is a customized docker install of dokuwiki which adds the openauth plugin.
 
 RUN apt-get update && \
-    apt-get install -y unzip && \
+    apt-get install -y unzip curl && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # add todo plugin
