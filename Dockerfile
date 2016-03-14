@@ -10,5 +10,5 @@ RUN apt-get update && \
 # add todo plugin
 RUN curl -O -L "https://github.com/cosmocode/dokuwiki-plugin-oauth/archive/master.zip" 
 RUN unzip master.zip -d /var/www/lib/plugins/
-RUN mv /var/www/lib/plugins/master /var/www/lib/plugins/oauth
+RUN mv /var/www/lib/plugins/dokuwiki-plugin-oauth-master /var/www/lib/plugins/oauth
 RUN rm -rf master.zip
